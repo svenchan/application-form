@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Villain Aplication Form</title>
+  <meta charset="8utf" />
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+  <h1 id="title">Villain Aplication form</h1>
+  <p id="description">So you want to become a villain. Do you really have what it takes? There's only one way to find out. And that's trough joining our online villain training course. To start the aplication process for our online course we'll first need you to fill out this form so we have some more information on you.
+
+<p id="description">There are many different kinds of vilains and we want to know a bit more about you so we can tailor our course a little better to your vilain personality.</p> 
+
+<p id="description">So go ahead and fill out the form. Remember there are no wrong answers! So don't worry. we just want to get to know the villain inside you :)
+</body>
+
+<form id="survey-form">
+<fieldset>
+  <legend>Personal Information</legend>
+    <div>
+     <label id="name-label" for="name">Name <input id="name" type="text" placeholder="Dr. Evil" required></input></label>
+     <label id="number-label" for"number">Age <input id="number" type="number" min="13" max="120" placeholder="27"></input></label>
+     <label id="email-label" for="email" >Email  <input id="email" type="email" placeholder="Evilkitty@evil.com" required></input></label>
+  </div>
+</fieldset>
+
+<fieldset>
+  <legend>What is your ultimate goal as a villain?</legend>
+  <div>
+    <label><input type="radio" id="goal1" name="goal" value="world-dommination"></input> World Dommination</label>
+    <label><input type="radio" id="goal2" name="goal" value="world-destruction"> World Destruction</input></label>
+    <label><input type="radio" id="goal3" name="goal" value="Money"></input> Money</label>
+    <label><input type="radio" id="goal4" name="goal" value="Infammy"></input> Infammy</label>
+  </div>
+</fieldset>
+
+<fieldset>
+  <legend>Kind of henchman/henchwomen you would surround yourself with?</legend>
+  <div>
+      
+    <label>Animals<input type="checkbox" value="animals"></input></label>
+    <label>Monsters<input type="checkbox" value="monsters"></input></label>
+
+    <label>The spandex wearing type <input type="checkbox" value="spandex"></input></label>
+    <label>Suit wearing gansters <input type="checkbox" value="gangsters" ></input></label>
+
+    <label id="other-label" for="other">Other 
+  <input id="other" value="other" type="text" placeholder="other"></input></label>
+  </div>
+</fieldset>
+
+<fieldset>
+  <legend>What is your favorite color?</legend>
+  <label>Select a color <select name= favorite-color id="dropdown">
+    <option value="Red">Red</option>
+    <option value="Green">Green</option>
+    <option value="Blue">Blue</option>
+    <option value="Black">Black</option>
+    <option value="Yellow">Yellow</option></select> </label>
+<fieldset>
+  <label for="story">Please tell us why you want to become a villain.    
+    <textarea id="story" rows="10" cols="50" placeholder="When I was a young twerp..." ></textarea> 
+  </label>
+  <input type="submit" id="submit" value="submit" ></input>
+  </fieldset>
+</form>
